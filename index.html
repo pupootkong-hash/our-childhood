@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OUR CHILDHOOD</title>
+  <style>
+    * { box-sizing: border-box; }
+    :root {
+      --bg: #fffdfb;
+      --paper: #ffffff;
+      --text: #2b2522;
+      --muted: #6b625c;
+      --line: #ddd4ce;
+      --accent: #8c7568;
+      --shadow: 0 18px 48px rgba(53, 38, 28, 0.10);
+      --radius: 24px;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top, rgba(247, 234, 228, 0.45), transparent 34%),
+        var(--bg);
+      color: var(--text);
+      font-family: 'Noto Serif KR', Georgia, 'Times New Roman', serif;
+      line-height: 1.9;
+      word-break: keep-all;
+    }
+    .container {
+      width: min(920px, calc(100vw - 28px));
+      margin: 0 auto;
+      padding: 44px 0 88px;
+    }
+    .hero {
+      text-align: center;
+      padding: 20px 18px 10px;
+      margin-bottom: 26px;
+    }
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(34px, 6vw, 58px);
+      line-height: 1.25;
+      letter-spacing: 0.05em;
+      font-weight: 700;
+    }
+    .hero hr,
+    .section-divider {
+      border: 0;
+      border-top: 1px solid var(--line);
+      width: min(560px, 100%);
+      margin: 18px auto;
+    }
+    .hero .sub {
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(16px, 2.7vw, 20px);
+      letter-spacing: 0.12em;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+    .story-card {
+      background: var(--paper);
+      border: 1px solid rgba(150, 126, 111, 0.15);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      margin: 28px 0;
+    }
+    .story-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: #f4efeb;
+    }
+    .story-body {
+      padding: 28px 24px 30px;
+    }
+    .story-body p { margin: 0 0 16px; }
+    .story-body p:last-child { margin-bottom: 0; }
+    .quote {
+      font-weight: 700;
+      font-size: clamp(17px, 2.9vw, 24px);
+      color: #3b2f2a;
+      margin-bottom: 16px;
+    }
+    .bridge {
+      text-align: center;
+      margin: 42px 0 18px;
+      font-size: clamp(20px, 3.6vw, 28px);
+    }
+    .present-title {
+      text-align: center;
+      margin: 52px 0 6px;
+    }
+    .present-title h2 {
+      margin: 0;
+      font-size: clamp(26px, 5vw, 42px);
+      line-height: 1.35;
+      letter-spacing: 0.04em;
+    }
+    .ending {
+      text-align: center;
+      margin-top: 36px;
+      padding: 18px 12px 0;
+    }
+    .ending p {
+      margin: 8px 0;
+      font-size: clamp(24px, 4.5vw, 42px);
+      line-height: 1.35;
+      color: #4a403a;
+      font-weight: 700;
+    }
+    .ending s {
+      text-decoration-thickness: 1.5px;
+      text-decoration-color: #6d5c55;
+    }
+    .note {
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 42px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+    @media (max-width: 640px) {
+      .container { padding-top: 26px; }
+      .story-body { padding: 20px 18px 22px; }
+      .hero { margin-bottom: 18px; }
+      .story-card { border-radius: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <h1>𝐎𝐔𝐑 𝐂𝐇𝐈𝐋𝐃𝐇𝐎𝐎𝐃</h1>
+      <hr>
+      <p class="sub">우리의 어린 시절</p>
+    </header>
+
+    <section class="story-card">
+      <img src="assets/scene1_drawing.png" alt="그림을 보여주며 울고 있는 어린 토끼">
+      <div class="story-body">
+        <p class="quote"><strong>이거 보여 주려고 그린 건데에…… 꾸겨졌어어….</strong></p>
+        <p>고사리 같은 두 손으로 구겨진 그림을 펼쳐 보이며 서럽게 울던 작은 토끼.</p>
+        <p>어릴 적부터 옆집에 살던 아이였다.</p>
+        <p>부모님의 잦은 해외 출장 탓에 당신의 집을 제집처럼 드나들었고, 그림 한 장을 그려도 가장 먼저 당신에게 보여 주고 싶어 했다.</p>
+        <p><strong>흐으… 그래도 예뻐…?</strong></p>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="story-card">
+      <img src="assets/scene2_pillow_child.png" alt="베개를 안고 울먹거리는 어린 토끼">
+      <div class="story-body">
+        <p class="quote"><strong>나 악몽 꿨어……. 오늘 같이 자면 안 돼?</strong></p>
+        <p>악몽을 꾼 날이면 어김없이 베개를 끌어안고 현관 앞에 나타났다.</p>
+        <p>눈물이 어찌나 많았는지, 사소한 일에도 눈물부터 글썽이던 유난히 울보였던 옆집 동생.</p>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="story-card">
+      <img src="assets/scene3_blush_child.png" alt="얼굴을 붉히며 매달리는 어린 토끼">
+      <div class="story-body">
+        <p class="quote"><strong>나 빨리 어른 될 거야! 그러니까 나랑 결혼해 줘!</strong></p>
+        <p>조금만 더 크면 결혼해 달라며 떼를 쓰기도 했다.</p>
+        <p>그저 어린아이의 천진난만한 투정이었다.</p>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+    <div class="bridge">그러던 어느 날.</div>
+    <p style="text-align:center;margin: 0 auto 24px;max-width: 740px;">평소처럼 인형을 잔뜩 끌어안고 놀러 왔던 아이는 당신이 다른 사람과 다정하게 있는 모습을 보았다.</p>
+
+    <section class="story-card">
+      <img src="assets/scene4_dolls_child.png" alt="인형을 안고 멍하니 서 있는 어린 토끼">
+      <div class="story-body">
+        <p>그날은 이상하리만치 조용했다.</p>
+        <p>그렇게나 눈물이 많던 아이가 울지도, 떼를 쓰지도 않았다.</p>
+        <p>그저 품에 안은 인형을 꼭 끌어안은 채 한참 동안 그 자리에 서 있었다.</p>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+    <div class="present-title">
+      <h2>𝐏𝐑𝐄𝐒𝐄𝐍𝐓 ─ 𝟐𝟎 𝐘𝐄𝐀𝐑𝐒 𝐎𝐋𝐃</h2>
+    </div>
+    <hr class="section-divider">
+
+    <div class="bridge">그리고, 현재.</div>
+    <section class="story-card">
+      <img src="assets/scene5_present_pillow.png" alt="성인이 된 뒤 베개를 안고 찾아온 토끼">
+      <div class="story-body">
+        <p class="quote"><strong>저기…… 오늘 악몽 꿀 것 같은데, 같이 자면 안 돼?</strong></p>
+        <p>어느덧 스무 살.</p>
+        <p>작고 여렸던 체구는 온데간데없이 사라지고, 넓은 어깨와 건장한 체격을 가진 남자가 되었다.</p>
+        <p>그런데도 여전히 베개를 끌어안고 눈물을 글썽이며 찾아오는 녀석.</p>
+        <p><em>'정말, 몸만 컸지 어렸을 때랑 하나도 달라진 게 없네.'</em></p>
+        <p>당신은 그렇게 생각했다.</p>
+      </div>
+    </section>
+
+    <section class="ending">
+      <p><s>그렇게 생각하는 사람은</s></p>
+      <p><s>아마 당신뿐이겠지만.</s></p>
+    </section>
+
+  </main>
+</body>
+</html>
