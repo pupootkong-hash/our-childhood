@@ -6,128 +6,30 @@
   <title>OUR CHILDHOOD</title>
   <style>
     * { box-sizing: border-box; }
-    :root {
-      --bg: #fffdfb;
-      --paper: #ffffff;
-      --text: #2b2522;
-      --muted: #6b625c;
-      --line: #ddd4ce;
-      --accent: #8c7568;
-      --shadow: 0 18px 48px rgba(53, 38, 28, 0.10);
-      --radius: 24px;
-    }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      background:
-        radial-gradient(circle at top, rgba(247, 234, 228, 0.45), transparent 34%),
-        var(--bg);
-      color: var(--text);
-      font-family: 'Noto Serif KR', Georgia, 'Times New Roman', serif;
-      line-height: 1.9;
-      word-break: keep-all;
-    }
-    .container {
-      width: min(920px, calc(100vw - 28px));
-      margin: 0 auto;
-      padding: 44px 0 88px;
-    }
-    .hero {
-      text-align: center;
-      padding: 20px 18px 10px;
-      margin-bottom: 26px;
-    }
-    .hero h1 {
-      margin: 0;
-      font-size: clamp(34px, 6vw, 58px);
-      line-height: 1.25;
-      letter-spacing: 0.05em;
-      font-weight: 700;
-    }
-    .hero hr,
-    .section-divider {
-      border: 0;
-      border-top: 1px solid var(--line);
-      width: min(560px, 100%);
-      margin: 18px auto;
-    }
-    .hero .sub {
-      margin: 0;
-      color: var(--muted);
-      font-size: clamp(16px, 2.7vw, 20px);
-      letter-spacing: 0.12em;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    }
-    .story-card {
-      background: var(--paper);
-      border: 1px solid rgba(150, 126, 111, 0.15);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      overflow: hidden;
-      margin: 28px 0;
-    }
-    .story-card img {
-      display: block;
-      width: 100%;
-      height: auto;
-      background: #f4efeb;
-    }
-    .story-body {
-      padding: 28px 24px 30px;
-    }
-    .story-body p { margin: 0 0 16px; }
-    .story-body p:last-child { margin-bottom: 0; }
-    .quote {
-      font-weight: 700;
-      font-size: clamp(17px, 2.9vw, 24px);
-      color: #3b2f2a;
-      margin-bottom: 16px;
-    }
-    .bridge {
-      text-align: center;
-      margin: 42px 0 18px;
-      font-size: clamp(20px, 3.6vw, 28px);
-    }
-    .present-title {
-      text-align: center;
-      margin: 52px 0 6px;
-    }
-    .present-title h2 {
-      margin: 0;
-      font-size: clamp(26px, 5vw, 42px);
-      line-height: 1.35;
-      letter-spacing: 0.04em;
-    }
-    .ending {
-      text-align: center;
-      margin-top: 36px;
-      padding: 18px 12px 0;
-    }
-    .ending p {
-      margin: 8px 0;
-      font-size: clamp(24px, 4.5vw, 42px);
-      line-height: 1.35;
-      color: #4a403a;
-      font-weight: 700;
-    }
-    .ending s {
-      text-decoration-thickness: 1.5px;
-      text-decoration-color: #6d5c55;
-    }
-    .note {
-      text-align: center;
-      color: var(--muted);
-      font-size: 14px;
-      margin-top: 42px;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    }
-    @media (max-width: 640px) {
-      .container { padding-top: 26px; }
-      .story-body { padding: 20px 18px 22px; }
-      .hero { margin-bottom: 18px; }
-      .story-card { border-radius: 20px; }
-    }
-  </style>
+    :root { color-scheme: dark; --bg:#101318; --paper:#191e25; --text:#d8d9db; --muted:#9da9b4; --line:#353f4b; --accent:#d1dfdf; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:radial-gradient(ellipse at 50% 0%,#202a35 0,transparent 650px),var(--bg); color:var(--text); font-family:'Noto Serif KR','Malgun Gothic',Georgia,serif; line-height:1.95; word-break:keep-all; overflow-wrap:break-word; }
+    .container { width:min(780px,calc(100% - 32px)); margin:auto; padding:72px 0 92px; }
+    .hero { text-align:center; padding:24px 0 38px; }
+    .hero h1 { margin:0; color:#eef1ed; font-family:Georgia,serif; font-size:clamp(26px,5.4vw,48px); line-height:1.3; letter-spacing:.035em; }
+    .hero hr,.section-divider { border:0; border-top:1px solid var(--line); width:min(430px,80%); margin:28px auto; }
+    .hero .sub { margin:0; color:var(--muted); font-size:16px; letter-spacing:.2em; }
+    .story-card { background:var(--paper); border:1px solid #303944; border-radius:12px; overflow:hidden; margin:30px 0; box-shadow:0 14px 36px #0005; }
+    .story-card img { display:block; width:100%; height:auto; background:#131820; }
+    .story-body { padding:32px 34px 36px; font-size:16px; }
+    .story-body p { margin:0 0 16px; }
+    .story-body p:last-child { margin-bottom:0; }
+    .story-body strong { color:#e4eceb; }
+    .quote { font-weight:700; font-size:clamp(17px,2.9vw,22px); line-height:1.7; color:#e4eceb; }
+    .story-body em { color:#aeb8c4; }
+    .bridge { text-align:center; margin:48px 0 20px; color:#c1c9d1; font-size:clamp(19px,3.6vw,24px); }
+    .present-title { text-align:center; margin:65px 0 8px; }
+    .present-title h2 { margin:0; color:#e5e9ec; font-family:Georgia,serif; font-size:clamp(19px,4.5vw,33px); line-height:1.5; letter-spacing:.02em; }
+    .ending { text-align:center; margin:66px 0 0; padding:20px 0; }
+    .ending p { margin:12px 0; font-size:clamp(23px,4.5vw,36px); line-height:1.5; color:#c4a5a9; font-weight:700; }
+    .ending s { text-decoration-thickness:1.5px; text-decoration-color:#a27980; }
+    @media(max-width:640px) { .container { padding:34px 0 60px; } .hero { padding:15px 0 24px; } .story-body { padding:23px 19px 26px; font-size:15px; } .story-card { border-radius:9px; } }
+</style>
 </head>
 <body>
   <main class="container">
